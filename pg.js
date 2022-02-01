@@ -10,11 +10,12 @@ app.use(bodyparser.urlencoded({
 
 app.set('view engine','ejs')
 const client = new Client({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'test',
+    user: 'dgmytbsdykhyfi',
+    host: 'ec2-34-233-157-9.compute-1.amazonaws.com',
+    database: 'd2bm32dnlo6g2q',
     port: 5432,
-    password: 'admin',
+    password: '037a5ba3460749f368b5a1e1be1bd2d6be926500cb0815614fb46b751f75eef0',
+    
     
 });
 
