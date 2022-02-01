@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 const express = require('express')
 var bodyparser = require('body-parser')
-
+var port = process.env.PORT || 3007
 var app = express()
 app.use(bodyparser.urlencoded({
     extended : true
@@ -111,6 +111,6 @@ app.get("/delete" , function(req,res){
     });
     res.send("Deleted record")
 })
-app.listen(3007,function(err,result){
+app.listen(port,function(err,result){
     console.log("Server started");
 })
