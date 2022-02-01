@@ -19,7 +19,7 @@ const client = new Client({
 });
 
 client.connect();
-/*
+
 app.get("/create" , function(req,res){
     const query = "CREATE TABLE users (email varchar,firstName varchar,lastName varchar,age int)"
 
@@ -32,7 +32,7 @@ app.get("/create" , function(req,res){
         client.end();
     });
     res.send("Table created")
-})*/
+})
 //create table
 
 app.get("/insert",function(req,res){
